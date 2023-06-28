@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+#header {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    }
+
+ #title { 
+    color: white;
+    margin-bottom: 200px;
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+ } 
+
+
+.info { 
+    width: 400px;
+    color: rgb(17, 12, 12);
+    background-color: #f9f9f9;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 300px;
+    
+}
+
+nav {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+  }
+  
+  nav a {
+    color: rgb(41, 38, 38);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+  
+  nav a:hover {
+    color: rgb(99, 83, 83);
+    border: 2px solid grey;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  @media
+  (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+
+.section {
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#section1 {
+    background: rgb(123,211,232);
+    background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
+    color: #40081a;
+}
+
+#section2 {
+    background: rgb(123,211,232);
+    background: linear-gradient(135deg, rgb(84, 190, 125) 0%, rgb(110, 143, 218) 0%, rgb(14, 58, 109) 100%);
+    color: #40081a;
+}
+
+#section3 {
+  background: rgb(123,211,232);
+    background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
+    color: #40081a;
+}
+
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.section > * {
+  margin: 5px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#increment-btn {
+  background: darkslategray;
+}
+
+#save-btn {
+  background: cadetblue;
+}
+
+#reset-btn {
+  background: dimgrey;
+}
+
+#convertBtn {
+  background: rgb(141, 27, 52);
+}
+

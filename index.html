@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <title>Min Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header id="header">
+         <div id="title">
+            <h1>ENYA 😀</h1>
+        </div> 
+    </header>
+
+    <nav> 
+        <a href="#section1">Home</a>
+        <a href="#section2">Project 1</a>
+        <a href="#section3">Project 2</a>
+    </nav>
+
+    <main>
+        <div class="section" id="section1">
+            <p class="info">On this page I will be showing a few projects I have made in HTML, CSS and JavaScript. </p>
+        </div>
+
+        <div class="section" id="section2">
+            <p class="info">On this project I have made a useful counter for when I am knitting and need to keep track of how many rounds I have done.</p>
+            <h1>Rounds:</h1>
+            <p>(For knitting)</p>
+            <h2 id="count-el">0</h2>
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+            <p id="save-el">Previous entries: </p>
+            <button id="reset-btn" onclick="reset()">RESET COUNTER</button>
+        </div>
+
+        <div class="section" id="section3">
+            <p class="info">This project is a unit converter that we made together in class, it lets you convert from one unit to another!</p>
+            <h1>Unit Converter</h1>
+
+            <label for="input">Enter a value:</label>
+            <input type="number" id="input" />
+
+            <label for="from">From:</label>
+            <select name="from" id="from" onchange="sameUnits()">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+            </select>
+
+            <label for="to">To:</label>
+            <select name="to" id="to" onchange="sameUnits()">
+                <option value="meters">Meters</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+            </select>
+
+            <button id="convertBtn" onclick="convert()">Convert</button>
+
+            <p id="result"></p>
+        </div>
+
+
+    </main>
+    <footer class="content"> Made by Enya </footer>
+</body>
+</html>
